@@ -1,14 +1,24 @@
 # Scientific calculator
 
+## Description
+
+Computes the result of an expression involving operators and functions.  
+
+Example `sin(pow(( 4 - 9 / 100),  2)) - max(cos(12), 4 * 2)` equals `7.59236`.
+
+Supports custom operators and functions.
+Written in C++14 in November 2015.
+
 Use ./build.sh to build on unix.
 Use ./calculator "expression" to evaluate an expression.
 
 One of the main goals of the project was to make it very easy to add additional mathematical
-functions and operators.
-Additionally, since full polynomials are supported it should be very easy to extend to solving
-arbitrary degree polynomials.
+functions and operators. Additionally, since polynomials are supported it should be easy to
+extend to solving arbitrary degree polynomials.
 Finally, over 30 scenarios of malformed expression erros are thrown in order to help the user
 understand how to fix the error.
+
+## Functionality
 
 Supports 2 modes:
 
@@ -16,7 +26,7 @@ Supports 2 modes:
 mathematical functions.
 Right now max, min, sin, cos, pow and log (base e) are supported.
 
-This is the definition of the sin function for example:
+For example, this is the code for the `sin` function:
 
 ```
 class FunctionSin: public Function {
