@@ -49,9 +49,9 @@ public:
 This supports all of the above functionalities except only addition and multiplication are allowed
 on degree 1 polynomials.
 
-This means that expressions:
-    "x + x * (10 / cos(2)) = min(15, pow(2, 3))" is valid
-    "x * x = 2" is invalid
+This means that:  
+* "x + x * (10 / cos(2)) = min(15, pow(2, 3))" is a valid expression
+* "x * x = 2" is an invalid expression, since it's a second-degree polynomial in `x`
 
 ## Testing
 
